@@ -41,7 +41,7 @@ def MealChoose(text_to_speech):
                     Notifica.configure(
                         text=e,
                         bg="black",
-                        fg="yellow",
+                        fg="#722F37",
                         width=33,
                         font=("times", 15, "bold"),
                     )
@@ -138,7 +138,7 @@ def MealChoose(text_to_speech):
                 Notifica.configure(
                     text=m,
                     bg="black",
-                    fg="yellow",
+                    fg="#722F37",
                     width=33,
                     relief=RIDGE,
                     bd=5,
@@ -156,7 +156,7 @@ def MealChoose(text_to_speech):
 
                 root = tkinter.Tk()
                 root.title("Attendance of " + Meal)
-                root.configure(background="black")
+                root.configure(background="#EFDFBB")
                 cs = os.path.join(path, fileName)
                 print(cs)
                 with open(cs, newline="") as file:
@@ -171,9 +171,9 @@ def MealChoose(text_to_speech):
                                 root,
                                 width=10,
                                 height=1,
-                                fg="yellow",
+                                fg="#722F37",
                                 font=("times", 15, " bold "),
-                                bg="black",
+                                bg="#DABF80",
                                 text=row,
                                 relief=tkinter.RIDGE,
                             )
@@ -193,18 +193,18 @@ def MealChoose(text_to_speech):
     Meal.title("Meal...")
     Meal.geometry("580x320")
     Meal.resizable(0, 0)
-    Meal.configure(background="black")
+    Meal.configure(background="#EFDFBB")
     # Meal_logo = Image.open("UI_Image/0004.png")
     # Meal_logo = Meal_logo.resize((50, 47), Image.ANTIALIAS)
     # Meal_logo1 = ImageTk.PhotoImage(Meal_logo)
-    titl = tk.Label(Meal, bg="black", relief=RIDGE, bd=10, font=("arial", 30))
+    titl = tk.Label(Meal, bg="#EFDFBB", relief=RIDGE, bd=10, font=("arial", 30))
     titl.pack(fill=X)
     # l1 = tk.Label(Meal, image=Meal_logo1, bg="black",)
     # l1.place(x=100, y=10)
     titl = tk.Label(
         Meal,
         text="Enter the Meal Name",
-        bg="black",
+        bg="#EFDFBB",
         fg="green",
         font=("arial", 25),
     )
@@ -212,8 +212,8 @@ def MealChoose(text_to_speech):
     Notifica = tk.Label(
         Meal,
         text="Attendance filled Successfully",
-        bg="yellow",
-        fg="black",
+        bg="#722F37",
+        fg="#DABF80",
         width=33,
         height=2,
         font=("times", 15, "bold"),
@@ -231,12 +231,12 @@ def MealChoose(text_to_speech):
 
     attf = tk.Button(
         Meal,
-        text="Check Sheets",
+        text="Check Records",
         command=Attf,
         bd=7,
         font=("times new roman", 15),
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         height=2,
         width=10,
         relief=RIDGE,
@@ -248,8 +248,8 @@ def MealChoose(text_to_speech):
         text="Enter Meal",
         width=10,
         height=2,
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         bd=5,
         relief=RIDGE,
         font=("times new roman", 15),
@@ -260,8 +260,8 @@ def MealChoose(text_to_speech):
         Meal,
         width=15,
         bd=5,
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         relief=RIDGE,
         font=("times", 30, "bold"),
     )
@@ -273,8 +273,8 @@ def MealChoose(text_to_speech):
         command=FillAttendance,
         bd=7,
         font=("times new roman", 15),
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         height=2,
         width=12,
         relief=RIDGE,
