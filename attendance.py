@@ -76,7 +76,7 @@ def err_screen():
         text="OK",
         command=del_sc1,
         fg="#722F37",
-        bg="#333333",  # Darker button color
+        bg="#DABF80",  # Darker button color
         width=9,
         height=1,
         activebackground="red",
@@ -162,7 +162,7 @@ def TakeImageUI():
     # ER no
     lbl1 = tk.Label(
         ImageUI,
-        text="Enrollment No",
+        text="Roll No.",
         width=10,
         height=2,
         bg="#EFDFBB",
@@ -177,7 +177,7 @@ def TakeImageUI():
         width=17,
         bd=5,
         validate="key",
-        bg="#333333",  # Dark input background
+        bg="#DABF80",  # Dark input background
         fg="#722F37",  # Bright text color for input
         relief=RIDGE,
         font=("Verdana", 18, "bold"),
@@ -202,7 +202,7 @@ def TakeImageUI():
         ImageUI,
         width=17,
         bd=5,
-        bg="#333333",  # Dark input background
+        bg="#DABF80",  # Dark input background
         fg="#722F37",  # Bright text color for input
         relief=RIDGE,
         font=("Verdana", 18, "bold"),
@@ -228,7 +228,7 @@ def TakeImageUI():
         width=32,
         height=2,
         bd=5,
-        bg="#333333",  # Dark background for messages
+        bg="#DABF80",  # Dark background for messages
         fg="#722F37",  # Bright text color for messages
         relief=RIDGE,
         font=("Verdana", 14, "bold"),
@@ -258,7 +258,7 @@ def TakeImageUI():
         command=take_image,
         bd=10,
         font=("Verdana", 18, "bold"),
-        bg="#333333",  # Dark background for the button
+        bg="#DABF80",  # Dark background for the button
         fg="#722F37",  # Bright text color for the button
         height=2,
         width=12,
@@ -282,7 +282,7 @@ def TakeImageUI():
         command=train_image,
         bd=10,
         font=("Verdana", 18, "bold"),
-        bg="#333333",  # Dark background for the button
+        bg="#DABF80",  # Dark background for the button
         fg="#722F37",  # Bright text color for the button
         height=2,
         width=12,
@@ -354,7 +354,4 @@ r.place(x=600, y=660)
 
 
 window.mainloop()
-r.place(x=600, y=660)
 
-
-window.mainloop()
