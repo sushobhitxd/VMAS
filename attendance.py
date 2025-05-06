@@ -23,6 +23,7 @@ import automaticAttedance
 # engine.runAndWait()
 
 
+
 def text_to_speech(user_text):
     engine = pyttsx3.init()
     engine.say(user_text)
@@ -76,7 +77,7 @@ def err_screen():
         text="OK",
         command=del_sc1,
         fg="#722F37",
-        bg="#DABF80",  # Darker button color
+        bg="#333333",  # Darker button color
         width=9,
         height=1,
         activebackground="red",
@@ -162,7 +163,7 @@ def TakeImageUI():
     # ER no
     lbl1 = tk.Label(
         ImageUI,
-        text="Roll No.",
+        text="Enrollment No",
         width=10,
         height=2,
         bg="#EFDFBB",
@@ -177,7 +178,7 @@ def TakeImageUI():
         width=17,
         bd=5,
         validate="key",
-        bg="#DABF80",  # Dark input background
+        bg="#333333",  # Dark input background
         fg="#722F37",  # Bright text color for input
         relief=RIDGE,
         font=("Verdana", 18, "bold"),
@@ -202,7 +203,7 @@ def TakeImageUI():
         ImageUI,
         width=17,
         bd=5,
-        bg="#DABF80",  # Dark input background
+        bg="#333333",  # Dark input background
         fg="#722F37",  # Bright text color for input
         relief=RIDGE,
         font=("Verdana", 18, "bold"),
@@ -228,7 +229,7 @@ def TakeImageUI():
         width=32,
         height=2,
         bd=5,
-        bg="#DABF80",  # Dark background for messages
+        bg="#333333",  # Dark background for messages
         fg="#722F37",  # Bright text color for messages
         relief=RIDGE,
         font=("Verdana", 14, "bold"),
@@ -258,7 +259,7 @@ def TakeImageUI():
         command=take_image,
         bd=10,
         font=("Verdana", 18, "bold"),
-        bg="#DABF80",  # Dark background for the button
+        bg="#333333",  # Dark background for the button
         fg="#722F37",  # Bright text color for the button
         height=2,
         width=12,
@@ -282,7 +283,7 @@ def TakeImageUI():
         command=train_image,
         bd=10,
         font=("Verdana", 18, "bold"),
-        bg="#DABF80",  # Dark background for the button
+        bg="#333333",  # Dark background for the button
         fg="#722F37",  # Bright text color for the button
         height=2,
         width=12,
@@ -354,4 +355,3 @@ r.place(x=600, y=660)
 
 
 window.mainloop()
-
