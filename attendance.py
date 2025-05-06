@@ -354,3 +354,7 @@ r.place(x=600, y=660)
 
 
 window.mainloop()
+r.place(x=600, y=660)
+
+
+window.mainloop()
