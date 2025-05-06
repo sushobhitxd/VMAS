@@ -29,7 +29,7 @@ def Mealchoose(text_to_speech):
 
         root = tkinter.Tk()
         root.title("Attendance of "+Meal)
-        root.configure(background="black")
+        root.configure(background="#EFDFBB")
         cs = f"Attendance\\{Meal}\\attendance.csv"
         with open(cs) as file:
             reader = csv.reader(file)
@@ -43,9 +43,9 @@ def Mealchoose(text_to_speech):
                         root,
                         width=10,
                         height=1,
-                        fg="yellow",
+                        fg="#722F37",
                         font=("times", 15, " bold "),
-                        bg="black",
+                        bg="#EFDFBB",
                         text=row,
                         relief=tkinter.RIDGE,
                     )
@@ -60,18 +60,18 @@ def Mealchoose(text_to_speech):
     Meal.title("Meal...")
     Meal.geometry("580x320")
     Meal.resizable(0, 0)
-    Meal.configure(background="black")
+    Meal.configure(background="#DABF80")
     # Meal_logo = Image.open("UI_Image/0004.png")
     # Meal_logo = Meal_logo.resize((50, 47), Image.ANTIALIAS)
     # Meal_logo1 = ImageTk.PhotoImage(Meal_logo)
-    titl = tk.Label(Meal, bg="black", relief=RIDGE, bd=10, font=("arial", 30))
+    titl = tk.Label(Meal, bg="#DABF80", relief=RIDGE, bd=10, font=("arial", 30))
     titl.pack(fill=X)
     # l1 = tk.Label(Meal, image=Meal_logo1, bg="black",)
     # l1.place(x=100, y=10)
     titl = tk.Label(
         Meal,
         text="Which Meal of Attendance?",
-        bg="black",
+        bg="#DABF80",
         fg="green",
         font=("arial", 25),
     )
@@ -94,8 +94,8 @@ def Mealchoose(text_to_speech):
         command=Attf,
         bd=7,
         font=("times new roman", 15),
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         height=2,
         width=10,
         relief=RIDGE,
@@ -107,8 +107,8 @@ def Mealchoose(text_to_speech):
         text="Enter Meal",
         width=10,
         height=2,
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         bd=5,
         relief=RIDGE,
         font=("times new roman", 15),
@@ -119,8 +119,8 @@ def Mealchoose(text_to_speech):
         Meal,
         width=15,
         bd=5,
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         relief=RIDGE,
         font=("times", 30, "bold"),
     )
@@ -132,8 +132,8 @@ def Mealchoose(text_to_speech):
         command=calculate_attendance,
         bd=7,
         font=("times new roman", 15),
-        bg="black",
-        fg="yellow",
+        bg="#DABF80",
+        fg="#722F37",
         height=2,
         width=12,
         relief=RIDGE,
